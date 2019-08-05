@@ -1,0 +1,486 @@
+/* Fonts */
+
+@font-face {
+  font-family: Gotham-Black;
+  src: url(../fonts/Gotham-Black.otf); /* Insert file path to font here */
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url(../fonts/Gotham-Light.otf); /* Insert file path to font here */
+}
+
+@font-face {
+  font-family: Gotham-Bold;
+  src: url(../fonts/Gotham-Bold.otf); /* Insert file path to font here */
+}
+
+/* Console Font */
+
+@font-face {
+  font-family: Inconsolata;
+  src: url(../fonts/Inconsolata-Regular.ttf); /* Insert file path to font here */
+}
+
+/* Core CSS rules */
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: Inconsolata;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Gotham-Black;
+}
+
+h1 {
+  margin: 30px 0 20px 0;
+  font-size: 45px;
+}
+
+h2 {
+  margin: 25px 0 20px 0;
+  font-size: 30px;
+}
+
+h3 {
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+}
+
+h4 {
+  margin: 15px 0 15px 0;
+  font-size: 20px;
+}
+
+h5 {
+  margin: 15px 0 15px 0;
+  font-size: 15px;
+  line-height: 23px;
+  font-family: Gotham-Bold;
+}
+
+p,
+a {
+  margin: 15px 0 15px 0;
+  font-size: 15px;
+  line-height: 23px;
+  font-family: Gotham;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #ba1f31;
+  text-decoration: underline;
+}
+
+strong,
+.bold {
+  font-family: Gotham-Bold;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 30px 15px 30px 15px;
+  }
+  .header {
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 600px) {
+  section {
+    padding: 50px;
+  }
+  .header {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  section {
+    padding: 50px 0 50px 0;
+  }
+  section > * {
+    margin: 0 auto;
+    width: 910px;
+  }
+  .pinch {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+}
+
+.text-justified {
+  text-align: justify;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Primary Colour Palette */
+
+.red-text {
+  color: #ba1f31;
+}
+
+.red-bg {
+  background-color: #ba1f31;
+  color: #fff !important;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.black-text {
+  color: #0b0c0c;
+}
+
+.dark-bg {
+  background-color: #202829;
+  color: #fff;
+}
+
+.gray-bg {
+  background-color: #ededed;
+}
+
+/* Secondary Colour Palette */
+
+.deep-gray {
+  background-color: #3d3935;
+  color: #fff;
+}
+
+.warm-gray {
+  background-color: #b2a9a7;
+  color: #fff;
+}
+
+.salmon {
+  background-color: #e3746d;
+  color: #fff;
+}
+
+.mustard {
+  background-color: #f7941d;
+  color: #fff;
+}
+
+.mint {
+  background-color: #a2cbae;
+  color: #fff;
+}
+
+.aubergine {
+  background-color: #4c2683;
+  color: #fff;
+}
+
+.blue {
+  background-color: #00adca;
+  color: #fff;
+}
+
+.console-green {
+  color: #209f7d;
+}
+
+.console-red {
+  color: #c82829;
+}
+
+.red-bg a,
+.dark-bg a,
+.warm-gray a,
+.deep-gray a,
+.salmon a,
+.mustard a,
+.mint a,
+.aubergine a,
+.blue a {
+  color: #fff;
+}
+
+/* Layout Helpers */
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mv-10 {
+  margin: 10px 0 10px 0;
+}
+
+.mv-20 {
+  margin: 20px 0 20px 0;
+}
+
+.mv-30 {
+  margin: 30px 0 30px 0;
+}
+
+.mv-40 {
+  margin: 40px 0 40px 0;
+}
+
+.mv-50 {
+  margin: 50px 0 50px 0;
+}
+
+.mv-60 {
+  margin: 60px 0 60px 0;
+}
+
+.mv-100 {
+  margin: 10px 0 100px 00;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hidden-s {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 600px) {
+  .hidden-m {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .hidden-l {
+    display: none !important;
+  }
+}
+
+/* Buttons */
+
+.button {
+  color: #fff;
+  padding: 11px 20px 11px 20px;
+  margin: 20px 0 20px 0;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ba1f31;
+  font-family: Gotham;
+}
+
+.button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-large {
+  padding: 18px 40px 18px 40px;
+}
+
+.button-white {
+  color: #ba1f31 !important;
+  background-color: #fff;
+}
+
+/* Elements */
+
+img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .image-proportioned {
+    max-width: 60%;
+    min-width: 400px;
+  }
+  .image-centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+  }
+}
+
+.graphic-icon {
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .graphic-icon {
+    margin: 0 auto;
+  }
+}
+
+/* Header */
+
+.logo {
+  width: 110px;
+}
+
+.header {
+  height: 108px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header > div {
+  padding-top: 25px;
+}
+
+.header > div > div > p {
+  margin: 26px 10px 0 10px;
+}
+
+.header > div > div > h1 {
+  margin: 12px 10px 0 10px;
+}
+
+.header > div > div > h2 {
+  margin: 18px 10px 0 10px;
+}
+
+.header > div > div > h3 {
+  margin: 22px 10px 0 10px;
+}
+
+.header > div > div > h4 {
+  margin: 26px 10px 0 10px;
+}
+
+.header > div > div > h5 {
+  margin: 26px 10px 0 10px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header-right {
+  float: right;
+  max-width: 500px;
+}
+
+.header-right p,
+.header-right h1,
+.header-right h2,
+.header-right h3,
+.header-right h4,
+.header-right h5 {
+  float: right;
+}
+
+/* Sections */
+
+.subsection {
+  padding: 25px;
+  margin: 20px 0 20px 0;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .subsection {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 600px) {
+  .subsection {
+    padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .subsection {
+    padding: 25px 50px 25px 50px;
+  }
+}
